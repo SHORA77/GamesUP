@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+
+<style>
+.button {
+  margin: 0;
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+/* button styling */
+.button {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255,255,255,0.6);
+  --animation-color: ##FF0000;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 20px var(--animation-color))
+
+}
+</style>     
+
+
+
+<head>
+	<meta charset="utf-8">
+	<title>GamesUp</title>
+</head>
+<body style="background-image:URL(img/Background.jpg);text-align: center;color: whitesmoke;">
+	<h1 style="color: white;text-align: center;font-family: sans-serif;">Esta es la página de noticias de videojuegos GamesUp</h1>
+	<h2 style="color: red;text-align: center;">Esta página todavía se encuentra en desarrollo y es susceptible de cambios</h2>
+Vamos a subir las ultimas noticias de videojuegos en este apartado
+<p><img src="img/ComingSoon.png"></p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<a href="./quienes.html">
+<button data-text="Awesome" class="button">
+    <span class="actual-text">Nosotros</span>
+    <span class="hover-text" aria-hidden="true">Nosotros</span>
+</button>
+</a>
+&nbsp
+&nbsp
+&nbsp
+&nbsp
+<a href="./contacto.html">
+<button data-text="Awesome" class="button">
+    <span class="actual-text">Contacto</span>
+    <span class="hover-text" aria-hidden="true">Contacto</span>
+  </button>
+</a>
+</button>
+&nbsp
+&nbsp
+&nbsp
+&nbsp
+<a href="./servicios.html">
+<button data-text="Awesome" class="button">
+
+    <span class="actual-text">Servicios</span>
+    <span class="hover-text" aria-hidden="true">Servicios</span>
+
+</button>
+
+
+
+
+<br>
+<br>
+<br>
+
+</body>
+</html>
